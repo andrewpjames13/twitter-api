@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <td>Kenneths Tweets</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <% @client.kenneth_tweets.each do |t| %>
+      <td> <%= t.text %></td>
+    </tr>
+      <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% @client.jb.each do |t| %>
+<%= t %>
+<% end %>
